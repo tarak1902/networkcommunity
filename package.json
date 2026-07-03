@@ -1,0 +1,20 @@
+{
+  "name": "queue-cure-26",
+  "version": "1.0.0",
+  "description": "Real-time clinic queue system — two synchronized screens (receptionist + patient) over Socket.IO. Server-authoritative state, live updates without page refresh.",
+  "type": "commonjs",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev:server": "node server/index.js",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client install && npm --prefix client run build"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
